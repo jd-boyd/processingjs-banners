@@ -51,7 +51,8 @@ void mouseMoved() {
 
 void draw()
 {
-  background(0, 0, 50);
+//  background(0, 0, 50);
+    background(0, 0, 0);
 
   // Drawing and update cycle
   for (int x = 0; x < sx; x=x+1) {
