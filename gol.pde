@@ -8,7 +8,7 @@ float density = 0.5;
 int[][][] world;
 
 int sizeDiv = 16;
-
+PFont fontA; // = loadFont("Aharoni");
 void setup()
 {
   size(940, 198);
@@ -29,6 +29,8 @@ void setup()
   for (int i = 0; i < sx * sy * density; i++) {
     world[(int)random(sx)][(int)random(sy)][1] = 1;
   }
+
+  fontA = loadFont("Aharoni");
 }
 
 void mouseMoved() {
@@ -86,6 +88,15 @@ void draw()
       }
     }
   }
+
+  textFont(fontA, 96);
+    text("JDBoyd", 20, 25+96);
+  // Set the font and its size (in units of pixels)
+
+  textFont(fontA, 24);
+  text("Acurately predicting 20 out of the", 550, 96);
+  text("last 4 zebra stampedes.", 660, 25+96);
+
 }
 
 // Count the number of adjacent cells 'on'
