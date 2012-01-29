@@ -1,0 +1,9 @@
+* Overview
+
+This is a scratch project for developing processingjs apps to use as the
+header on my website, http://blog.jdboyd.net
+
+* Running
+/c/Python27/python -m SimpleHTTPServer 8080
+
+Then look at that port.
